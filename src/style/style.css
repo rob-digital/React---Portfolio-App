@@ -1,0 +1,86 @@
+@font-face {
+  font-family: RobotoCondensed;
+  src: url(../assets/roboto-condensed.light.ttf);
+}
+
+@font-face {
+  font-family: EconomicaBold;
+  src: url(../assets/economica-bold.ttf);
+}
+
+body {
+  text-align: center;
+  padding: 2.5%;
+  font-family: 'RobotoCondensed';
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'EconomicaBold';
+}
+
+.myMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.myMedia video {
+  width: 50%;
+}
+
+.rigthMedia {
+  width: 50%;
+}
+
+.title-fade-out {
+  opacity: 0;
+  -webkit-animation-name: fade-out;
+          animation-name: fade-out;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.title-fade-in {
+  opacity: 1;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
